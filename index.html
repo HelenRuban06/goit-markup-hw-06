@@ -38,11 +38,13 @@
                 </ul>
             </address>
 
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="menu-toggle-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-burger-button"></use>
-                </svg>
-            </button>
+            <div class="container-burger">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggle-icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+            </div>
 
         </div>
     </header>
@@ -57,11 +59,11 @@
         </section> -->
 
 
-        <!-- <section class="section">
+        <section class="section-benefits">
             <div class="container">
                 <h2 class="visually-hidden">Goal</h2>
                 <ul class="main-one list">
-                    <li class="">
+                    <li class="main-one-item">
                         <div class="container-hero">
                             <svg class="main-one-icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna">
@@ -72,7 +74,7 @@
                         <p class="main-text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
-                    <li class="">
+                    <li class="main-one-item">
                         <div class="container-hero">
                             <svg class="main-one-icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock">
@@ -84,7 +86,7 @@
                             shortest possible
                             time.</p>
                     </li>
-                    <li class="">
+                    <li class="main-one-item">
                         <div class="container-hero">
                             <svg class="main-one-icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram">
@@ -96,7 +98,7 @@
                             opportunities and minimize
                             risk.</p>
                     </li>
-                    <li class="">
+                    <li class="main-one-item">
                         <div class="container-hero">
                             <svg class="main-one-icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut">
@@ -111,9 +113,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section-two">
+        <section class="section-two">
             <div class="container">
                 <h2 class="main-product">What are we doing</h2>
                 <ul class="main-one list">
@@ -125,14 +127,14 @@
                             height="300"></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section-three">
+        <section class="section-three">
             <div class="container">
                 <h2 class="team">Our Team</h2>
-                <ul class="main-one list">
+                <ul class="main-one-team list">
                     <li class="main-item">
-                        <img src="./images/img4.jpg" alt="Mark Guerrero" class="team-img-one" width="264" height="260">
+                        <img src="./images/img4.jpg" alt="Mark Guerrero" class="team-img" width="264" height="260">
                         <div class="position">
                             <h3 class="team-person">Mark Guerrero</h3>
                             <p class="main-text-position">Product Designer</p>
@@ -169,7 +171,7 @@
                         </div>
                     </li>
                     <li class="main-item">
-                        <img src="./images/img5.jpg" alt="Tom Ford" class="team-img-two" width="264" height="260">
+                        <img src="./images/img5.jpg" alt="Tom Ford" class="team-img" width="264" height="260">
                         <div class="position">
                             <h3 class="team-person">Tom Ford</h3>
                             <p class="main-text-position">Frontend Developer</p>
@@ -206,8 +208,7 @@
                         </div>
                     </li>
                     <li class="main-item">
-                        <img src="./images/img6.jpg" alt="Camila Garcia" class="team-img-three" width="264"
-                            height="260">
+                        <img src="./images/img6.jpg" alt="Camila Garcia" class="team-img" width="264" height="260">
                         <div class="position">
                             <h3 class="team-person">Camila Garcia</h3>
                             <p class="main-text-position">Marketing</p>
@@ -244,7 +245,7 @@
                         </div>
                     </li>
                     <li class="main-item">
-                        <img src="./images/img7.jpg" alt="Daniel Wilson" class="team-img-four" width="264" height="260">
+                        <img src="./images/img7.jpg" alt="Daniel Wilson" class="team-img" width="264" height="260">
                         <div class="position">
                             <h3 class="team-person">Daniel Wilson</h3>
                             <p class="main-text-position">UI Designer</p>
@@ -282,9 +283,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="customers">Customers</h2>
                 <ul class="customers-list list">
@@ -332,7 +333,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- <footer class="footer link">
@@ -458,69 +459,65 @@
 
     </div>
 
-    <!-- MOBILE MENU -->
-
+    <!-- ----------MOBILE MENU-------- -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="32" height="22">
-                <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
+        <button class="mobile-button-close js-close-menu">
+            <svg class="button-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
 
         <ul class="mobile-menu">
-            <li class="modal-menu-item"><a href="" class="modal-menu-link link">Studio</a></li>
-            <li class="modal-menu-item"><a href="" class="modal-menu-link link">Portfolio</a></li>
-            <li class="modal-menu-item"><a href="" class="modal-menu-link link">Contacts</a></li>
+            <li class="mobile-menu-item list"><a href="" class="mobile-menu-link link">Studio</a></li>
+            <li class="mobile-menu-item list"><a href="" class="mobile-menu-link link">Portfolio</a></li>
+            <li class="mobile-menu-item list"><a href="" class="mobile-menu-link link">Contacts</a></li>
         </ul>
 
         <address class="mobile-adress">
             <ul class="mobile-adress-navigation list">
-                <li><a href=" mailto:info@devstudio.com" class="mobile-adress-link link">info@devstudio.com</a>
+                <li><a href="tel:+110001111111" class="mobile-adress-phone link">+11 (000) 111-11-11</a>
                 </li>
-                <li><a href="tel:+110001111111" class="mobile-adress-link link">+11 (000)
-                        111-11-11</a></li>
+                <li><a href=" mailto:info@devstudio.com" class="mobile-adress-email link">info@devstudio.com</a></li>
             </ul>
         </address>
 
-        <ul class="mobile-list list">
-            <li class="mobile-item">
-                <a href="/" class="mobile-link">
-                    <svg class="mobile-text-icon" width="24" height="24">
+        <ul class="mobile-social-list list">
+            <li class="mobile-social-item">
+                <a href="/" class="mobile-social-link">
+                    <svg class="main-text-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
-            <li class="mobile-item">
-                <a href="/" class="mobile-link">
-                    <svg class="mobile-text-icon" width="24" height="24">
+            <li class="mobile-social-item">
+                <a href="/" class="mobile-social-link">
+                    <svg class="main-text-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                 </a>
             </li>
-            <li class="mobile-item">
-                <a href="/" class="mobile-link">
-                    <svg class="mobile-text-icon" width="24" height="24">
+            <li class="mobile-social-item">
+                <a href="/" class="mobile-social-link">
+                    <svg class="main-text-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                 </a>
             </li>
-            <li class="mobile-item">
-                <a href="/" class="mobile-link">
-                    <svg class="mobile-text-icon" width="24" height="24">
+            <li class="mobile-social-item">
+                <a href="/" class="mobile-social-link">
+                    <svg class="main-text-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                 </a>
             </li>
         </ul>
+
     </div>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
